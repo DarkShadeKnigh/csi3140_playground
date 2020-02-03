@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!-- saved from url=(0062)http://a4word.com/courses/csi3140/examples/07/15_continue.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head><body>
+    <script type="text/javascript">
+
+      var countBy = 18;
+      var maxNum = 100;
+      var count = 0;
+      document.writeln("Counting by " + countBy + " up to a max of " + maxNum);
+      while (true) {
+        count += 1;
+        if (count > maxNum) { 
+          break;
+        } else if (count % countBy != 0) {
+          continue;
+        } else {
+          document.writeln("<li>" + count + "</li>");  
+        }
+      }
+    </script>Counting by 18 up to a max of 100
+<li>18</li>
+<li>36</li>
+<li>54</li>
+<li>72</li>
+<li>90</li>
+
+  
+</body></html>
